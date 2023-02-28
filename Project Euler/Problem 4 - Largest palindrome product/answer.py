@@ -7,6 +7,8 @@ def is_palindrome(x):
 def reversed_list(array):
     return sorted(array)[::-1]
 
+# Could use matrix multiplication with numpy instead
+# make a a column matrix and b a row matrix
 def generate_array(left_no_digits, right_no_digit):
     left = int("9"*left_no_digits)
     right = int("9"*right_no_digit)
