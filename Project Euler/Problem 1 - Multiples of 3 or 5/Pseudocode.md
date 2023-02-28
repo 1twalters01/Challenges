@@ -1,6 +1,5 @@
-# Multiples of 3 or 5
-## Problem 1
-### O(1)
+# Problem 1 - Multiples of 3 or 5
+## O(1)
 Using sum of n terms equation to get the sum -> Sum = n(n+1)/2:
 
 To get the sum of multiples of x up to n we must thus:
