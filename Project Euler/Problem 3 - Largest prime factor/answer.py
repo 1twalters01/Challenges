@@ -5,7 +5,7 @@ def max_prime_factor(value):
         while value % i == 0:
             value = value / i
             array.append(i)
-        i = i + 1
+        i += 1
     array.append(int(value))
     return max(array), array
 
