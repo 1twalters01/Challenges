@@ -5,5 +5,6 @@ def fib(limit):
         yield a
         a, b = b, a+b
 
-fib_list = [i for i in fib(4000000) if i%2 == 0]
+upper_bound = 4000000
+fib_list = [i for i in fib(upper_bound) if i%2 == 0]
 print(sum(fib_list))
