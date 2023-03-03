@@ -1,0 +1,49 @@
+# The objective of this task is to write an API with one GET endpoint.
+
+# You are required to write an API with Python and the Flask library that will contain the following endpoint:
+# GET /users
+
+# endpoint should return the status code 200 on a successful request;
+# endpoint should return the data taken from the mocked-up database using the provided helper function get_users. This function returns a list of dictionaries containing id (number), name (string) and role (string). An example list might appear as follows:
+
+# [
+# {
+# "id": 1,
+# "name": "John",
+# "role": "admin"
+# },
+# {
+# "id": 2,
+# "name": "Juan",
+# "role": "developer"
+# },
+# ]
+
+# endpoint should accept a query parameter name which will contain a string;
+
+# ~When parameter name is provided, all users whose name property is equal to the name query parameter must be returned (there may be more than one match). If no users with the given name are found, an empty list must be returned. 
+
+from flask import Flask, jsonify, request
+from typing import List, Dict
+
+# Helper function to get the list of users
+def get_users() -> List[Dict[str, str]]:
+    return [
+        {"id": "1", "name": "John", "role": "admin"},
+        {"id": "2", "name": "Juan", "role": "developer"},
+        {"id": "3", "name": "Jane", "role": "manager"},
+        {"id": "4", "name": "Jim", "role": "developer"}
+    ]
+
+app = Flask(__name__)
+
+@app.route('/users', methods=['GET'])
+def get_users_endpoint():
+    users = get_users()
+    name_filter = request.args.get('name')
+    if name_filter:
+        users = [user for user in users if user['name'] == name_filter]
+    return jsonify(users), 200
+
+if __name__ == '__main__':
+    app.run(debug=True)
