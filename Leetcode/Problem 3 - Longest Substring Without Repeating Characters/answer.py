@@ -5,7 +5,7 @@ def lengthOfLongestSubstring(s):
     start = 0
     end = 0
     max_length = 0
-    max_list = []
+    max_string = ""
     uniques = []
 
     while end < len(s):
@@ -13,13 +13,13 @@ def lengthOfLongestSubstring(s):
             uniques.append(s[end])
             if len(uniques) > max_length:
                 max_length = len(uniques)
-                max_list = uniques[::1]
-                print(max_list)
+                max_string = ''.join(uniques)
+                print(max_string)
             end += 1
         else:
             uniques.remove(s[end])
             start += 1
-    return max_length, max_list
+    return max_length, max_string
 
 s = "abcabcbb"
 print(lengthOfLongestSubstring(s))
