@@ -4,3 +4,123 @@
     padding: 0;
     list-style: none;
 }
+
+@media only screen and (min-width: 1201px) {
+    /* Navbar */
+    nav {
+        width: clamp(700px, 750%, 2000px);
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        grid-gap: 300px;
+        margin: auto;
+    }
+    nav .lhs{
+        display: grid;
+        grid-template-columns: 0.8fr 3fr;
+    }
+    nav .lhs ul{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 50px;
+    }
+    nav img{
+        width: 150px;
+    }
+    nav .rhs ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* Carousel */
+    /* Shopping links */
+    .shopping-links{
+        width: clamp(700px, 60%, 2000px);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: auto;
+    }
+    /* Products */
+    .products{
+        width: clamp(700px, 80%, 2000px);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3%;
+        margin: auto;
+    }
+    /* Bing */
+    .bing{
+        width: clamp(700px, 80%, 2000px);
+        margin: auto;
+    }
+    /* For business */
+    .business{
+        width: clamp(700px, 80%, 2000px);
+        margin: auto;
+    }
+    .business .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3%;
+    }
+    /* Socials */
+    .socials ul{
+        display: grid;
+        grid-template-columns: 130px 40px 40px 40px 40px;
+    }
+    .socials ul li svg{
+        width: 20px;
+        height: 20px;
+    }
+    /* To the top */
+    /* Footer */
+    footer{
+        width: clamp(20000px, 80%);
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 50px;
+        justify-items:center;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+    /* Navbar */
+    /* Carousel */
+    /* Shopping links */
+    /* Products */
+    /* Bing */
+    /* For business */
+    /* Socials */
+    /* To the top */
+    /* Footer */
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px ){
+    /* Navbar */
+    /* Carousel */
+    /* Shopping links */
+    /* Products */
+    /* Bing */
+    /* For business */
+    /* Socials */
+    /* To the top */
+    /* Footer */
+}
+@media only screen and (max-width: 768px) and (min-width: 481px ) {
+    /* Navbar */
+    /* Carousel */
+    /* Shopping links */
+    /* Products */
+    /* Bing */
+    /* For business */
+    /* Socials */
+    /* To the top */
+    /* Footer */
+}
+@media only screen and (max-width: 480px) and (min-width: 320px  ) {
+    /* Navbar */
+    /* Carousel */
+    /* Shopping links */
+    /* Products */
+    /* Bing */
+    /* For business */
+    /* Socials */
+    /* To the top */
+    /* Footer */
+}
