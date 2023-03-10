@@ -1,3 +1,5 @@
+# Problem 56 - Powerful digit sum
+## O(n^2)
 Create a function that sums digits:
     variable = 0
     while number is not 0:
