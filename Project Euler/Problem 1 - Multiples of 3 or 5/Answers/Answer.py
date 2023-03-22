@@ -10,9 +10,10 @@ def limits_for_3_5_and_15(limit):
     return limit3, limit5, limit15
 
 def summations_for_3_5_and_15(limit3, limit5, limit15):
-    summation3 = 0.5*(limit3**2+limit3)*3
-    summation5 = 0.5*(limit5**2+limit5)*5
-    summation15 = 0.5*(limit15**2+limit15)*15
+    summation3 = 0.5*(limit3**2 + limit3)*3
+    summation5 = 0.5*(limit5**2 + limit5)*5
+    summation15 = 0.5*(limit15**2 + limit15)*15
     return summation3, summation5, summation15
 
-print(multiples_of_3_and_5(10000000))
+value = int(input("Enter a number: "))
+print(multiples_of_3_and_5(value))

@@ -1,4 +1,5 @@
 # Problem 20 - Powerful digit sum
+## O(n)
 n! means n × (n − 1) × ... × 3 × 2 × 1
 
 For example, 10! = 10 × 9 × ... × 3 × 2 × 1 = 3628800,
