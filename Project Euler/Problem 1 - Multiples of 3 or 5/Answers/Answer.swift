@@ -20,7 +20,6 @@ func summations_for_3_5_and_15(limit3: Double, limit5: Double, limit15: Double) 
     let summation5 = (pow(limit5, 2) + limit5)*5/2
     let summation15 = (pow(limit15, 2) + limit15)*15/2
     return (summation3, summation5, summation15)
-    // return (summation3, summation5, summation15)
 }
 
 print("Enter a number: ", terminator: "")
