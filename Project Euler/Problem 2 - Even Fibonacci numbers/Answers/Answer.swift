@@ -2,7 +2,7 @@ struct fib {
     private var value = 0
     private var (a, b) = (1, 2)
 
-    init(limit: Int) {
+    init (limit: Int) {
         self.value = limit
     }
 
@@ -13,6 +13,7 @@ struct fib {
         }
         return nil
     }
+
     mutating func current() -> Int {
         return a
     }
