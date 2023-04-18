@@ -1,12 +1,6 @@
 use pyo3::prelude::*;
 use pyo3::types::PyTuple;
 
-/// Formats the sum of two numbers as string.
-// #[pyfunction]
-// fn sum_as_string(a: usize, b: usize) -> PyResult<String> {
-//     Ok((a + b).to_string())
-// }
-
 #[pyfunction]
 fn limits_for_3_5_and_15(py: Python<'_>, input:u64) -> PyResult<&PyTuple> {
     let limit:u64 = input-1;
